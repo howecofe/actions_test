@@ -26,7 +26,7 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - uses: actions/github-fullname-action@v1
-        with:
-          first-name: 'Greta'
-          last-name: 'Lee'
+      - name: Very Simple Hello World
+        # You may pin to the exact commit or the version.
+        # uses: phwes/simple_hello_world@c055ea4bac8a8afbedabb6f19d575a9533047782
+        uses: phwes/simple_hello_world@v1
