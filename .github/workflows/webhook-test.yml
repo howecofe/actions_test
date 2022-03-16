@@ -27,6 +27,6 @@ jobs:
       - name: Kakaowork Webhook
         uses: joelwmale/webhook-action@master
         with:
-          url: ${{ secrets.WEBHOOK_URL }}
+          url: 'https://kakaowork.com/bots/hook/mwzspzh8zhyy'
           headers: '{"Content-Type": "application/json"}'
           body: '{"data": "hello world"}'
