@@ -24,11 +24,9 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Webhook Action
-        # You may pin to the exact commit or the version.
-        # uses: joelwmale/webhook-action@6f6298309b7aa21dc601d8c6271e0be055ce6f0e
+      - name: Kakaowork Webhook
         uses: joelwmale/webhook-action@master
         with:
-          url: 'https://kakaowork.com/bots/hook/mwzspzh8zhyy'
-          headers: '"Content-Type": "application/json"'
-          body: '"text": "hello world"'
+          url: ${{ secrets.WEBHOOK_URL }}
+          headers: '{"Content-Type": "application/json"}'
+          body: '{"data": "hello world"}'
