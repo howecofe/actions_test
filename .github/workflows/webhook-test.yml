@@ -28,5 +28,5 @@ jobs:
         uses: joelwmale/webhook-action@master
         with:
           url: 'https://kakaowork.com/bots/hook/mwzspzh8zhyy'
-          headers: '{"Content-Type": "application/json"}'
-          body: '{"data": "hello world"}'
+          #headers: '{"Content-Type": "application/json"}'
+          body: '{"text": "hello world"}'
